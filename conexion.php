@@ -1,9 +1,9 @@
 <?php
 session_start();
-$servername = "localhost";
+$servername = "railway";
 $username = "root";
-$password = "";
-$dbname = "usuarios";
+$password = "d6vV3vYNfDPVEN4P8F1c";
+$dbname = "railway";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
