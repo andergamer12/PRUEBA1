@@ -1,11 +1,13 @@
 <?php
 session_start();
-$servername = "railway";
+$servername = "containers-us-west-100.railway.app";
 $username = "root";
 $password = "d6vV3vYNfDPVEN4P8F1c";
 $dbname = "railway";
+$port = 6075;
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Crear la conexión
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
