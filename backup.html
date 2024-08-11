@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+    <h2>Registro de usuarios</h2>
+    <form id="loginForm">
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button onclick="registrar()">Registrar</button>
+    </form>
+
+    <h2>Ingreso de usuarios</h2>
+    <form id="loginForm1">
+        <input type="email" id="email1" placeholder="Correo electrónico" required>
+        <input type="password" id="password1" placeholder="Contraseña" required>
+        <button onclick="ingreso()">Iniciar Sesión</button>
+    </form>
+
+    <h2>Recuperar Contraseña</h2>
+<form id="resetPasswordForm">
+    <input type="email" id="resetEmail" placeholder="Correo electrónico" required>
+    <button onclick="resetPassword()">Enviar correo de recuperación</button>
+</form>
+
+
+    <!-- Carga Firebase desde CDN -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+
+    <!-- Tu script -->
+    <script src="app.js"></script>
+</body>
+</html>
