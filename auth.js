@@ -21,7 +21,7 @@ function iniciarSesionConGitHub() {
             window.location.href = 'principal.html';
         }).catch((error) => {
             const errorMessage = error.message;
-            alert("Error al iniciar sesión con GitHub: " + errorMessage);
+           
             console.error("Error en el inicio de sesión con GitHub:", errorMessage);
         });
 }
@@ -35,7 +35,7 @@ function iniciarSesionConGoogle() {
             window.location.href = 'principal.html';
         }).catch((error) => {
             const errorMessage = error.message;
-            alert("Error al iniciar sesión con Google: " + errorMessage);
+            
             console.error("Error en el inicio de sesión con Google:", errorMessage);
         });
 }
@@ -49,7 +49,7 @@ function iniciarSesionConFacebook() {
             window.location.href = 'principal.html';
         }).catch((error) => {
             const errorMessage = error.message;
-            alert("Error al iniciar sesión con Facebook: " + errorMessage);
+            
             console.error("Error en el inicio de sesión con Facebook:", errorMessage);
         });
 }
@@ -90,7 +90,7 @@ function ingreso() {
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                alert("Inicio de sesión fallido");
+                
                 console.error("Error en el inicio de sesión:", errorMessage);
             });
     });
