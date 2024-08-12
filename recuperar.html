@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Recuperar Contraseña</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Recuperar contraseña</h1>
+            <form class="form" id="recupPasswordForm">
+                <input type="email" placeholder="Ingresar Email" id="email2" required>
+                <button type="submit" onclick="recupPassword()" id="login-button">Enviar correo</button>
+
+            </form>
+                
+                
+        </div>
+        
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+    <!-- Carga Firebase desde CDN -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+
+    <!-- Tu script -->
+    <script type="module" src="auth.js"></script>
+</body>
+</html>
